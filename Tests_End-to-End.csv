@@ -1,0 +1,12 @@
+E2E-ID,Parcours couvert,Schéma,Support,Étapes synthétiques,TU appelés
+E2E-01,Paiement ponctuel Visa – Auth Mobile App (succès),Visa,Browser,Achat → Push [U-06] → Valider [U-07] → Résumé,U-01 03 06 07 16 19-V 20
+E2E-02,Idem In-App,Visa,In-App,Flux identique,U-01 03 06 07 16 18 19-V 20
+E2E-03,Paiement ponctuel MC – SMS OTP,MC,Browser,Achat → Sélect carte [U-09] + tél [U-10] → SMS [U-08] → Code OK → Résumé,U-01 04 08 09 10 16 19-M 20
+E2E-04,Idem – OTP invalide puis succès,MC,Browser,Même que 03 + code faux [U-11] → retry,U-01 04 08 09 10 11 16 19-M 20
+E2E-05,Paiement ponctuel CB – OTP SVI,CB,Browser,Achat → Appel [U-12] → Code [U-13],U-01 05 12 13 16 19-C 20
+E2E-06,Paiement Visa – CAI (secours),Visa,Browser,Profil sans tél./appli → Champ CAI [U-14] → Code [U-15],U-01 03 14 15 16 19-V 20
+E2E-07,Multi-cartes & multi-tél. (Visa),Visa,Browser,Choix carte [U-09] + tél [U-10] → SMS [U-08],U-01 03 08 09 10 16 19-V
+E2E-08,Timeout pendant auth mobile,Visa,Browser,Lancer push → Ne rien faire 5 min,U-16 03 20
+E2E-09,Bouton Annuler – voie Oui,MC,Browser,En auth SMS → Annuler [U-23] → Pop-up [U-24] → Oui [U-25],U-23-24-25
+E2E-10,Bouton Annuler – voie Non,MC,Browser,"Même, cliquer Non [U-26]",U-23-24-26
+E2E-11,Vérif. UI masking + footer (3 schémas),Visa/MC/CB,Browser & App,Parcourir flux → Contrôler U-01/02/27,U-01 02 03/4/5 18 27

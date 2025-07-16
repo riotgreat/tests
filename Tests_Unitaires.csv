@@ -1,0 +1,29 @@
+TU-ID,Catégorie,Objet testé,Conditions / Pré-requis,Étapes clés,Résultat attendu
+U-01,UI & Mask,Masquage PAN,N’importe quel résumé,Contrôler libellé carte,XXXX XXXX XXXX 1234
+U-02,UI & Mask,Masquage N° téléphone,Écrans OTP SMS & SVI,Contrôler n° affiché,XX XX XX ** **
+U-03,UI,Logo Visa,Flux Visa,Ouvrir résumé,Logo Visa correct
+U-04,UI,Logo Mastercard,Flux MC,Ouvrir résumé,Logo MC correct
+U-05,UI,Logo CB,Flux CB,Ouvrir résumé,Logo CB correct
+U-06,Auth Mobile,Push reçu,Profil appli LCL,Déclencher auth,Notification < 10 s
+U-07,Auth Mobile,Validation push,Profil appli,Appuyer « Valider »,Statut succès
+U-08,Auth SMS,SMS OTP reçu,Tél. fiabilisé,Déclencher auth,SMS < 10 s
+U-09,Auth SMS,Sélection carte (multi-cartes),≥ 2 cartes,"Ouvrir liste, choisir",Carte correcte prise en compte
+U-10,Auth SMS,Sélection téléphone (multi-tél.),≥ 2 n°,Choisir n°,SMS envoyé au bon n°
+U-11,Auth SMS,OTP invalide,Profil SMS,Entrer code faux,Message erreur + retry
+U-12,Auth SVI,Appel SVI reçu,Profil SVI,Déclencher auth,Appel < 10 s
+U-13,Auth SVI,Saisie code SVI,Profil SVI,Saisir code,Auth acceptée
+U-14,Auth CAI,Champ CAI présent,Util. sans tél./appli,Déclencher auth,Champ visible
+U-15,Auth CAI,Saisie CAI valide,Util. sans tél./appli,Entrer CAI,Auth réussie
+U-16,Sécurité,Timeout session,Tous profils,Inactif 5 min,Session expirée + msg
+U-17,Langue,Templates français,Langue FR,Parcourir,Tous textes FR corrects
+U-17b,Langue,Templates EN / DE,Langue EN / DE,Parcourir,Textes corrects
+U-18,UI Dyn.,Rendu Browser vs In-App,Même parcours,Comparer,Aucune diff. fonctionnelle
+U-19,Réseau,Routage Visa / MC / CB,Selon schéma,Inspecter trame,Réseau conforme
+U-20,Bouton,Bouton Aide présent,N’importe quel écran,Vérifier header,Icône / libellé présent
+U-21,Bouton,Ouverture modal Aide,Tous,Cliquer Aide,Fenêtre s’ouvre
+U-22,Bouton,Contenu Aide multilingue,Langue FR / EN / DE,Ouvrir modal,Texte traduit
+U-23,Bouton,Bouton Annuler présent,Écran auth,Vérifier bas d’écran,Bouton visible
+U-24,Bouton,Popup Annuler,Cliquer Annuler,,Pop-up Yes/No affichée
+U-25,Bouton,"Oui, annuler",Pop-up ouverte,Cliquer Oui,Retour commerçant
+U-26,Bouton,"Non, continuer",Pop-up ouverte,Cliquer Non,Retour parcours
+U-27,UI,Footer cohérent,Mobile portrait & paysage,Tourner écran,Footer s’ajuste
